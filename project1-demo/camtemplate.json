@@ -5,7 +5,7 @@
    "manifest": {
      "template_type": "Terraform",
      "template_format": "HCL",
-     "template_provider": "Amazon_EC2"
+     "template_provider": "AmazonEC2"
    },
    "metadata": {
      "displayName": "project1-demo",
