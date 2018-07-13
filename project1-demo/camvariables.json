@@ -14,6 +14,14 @@
     {
       "name": "instances",
       "label": "Instances"
+    },
+    {
+      "name": "aws_subnet_networks",
+      "label": "aws_subnet Networks"
+    },
+    {
+      "name": "security",
+      "label": "Security"
     }
   ],
   "output_groups": [ ],
@@ -115,7 +123,43 @@
       "hidden": false,
       "immutable": false,
       "immutable_after_create": false
+    },
+    {
+      "name": "aws_network_vpc_id",
+      "label": "Aws Network Vpc Id",
+      "description": "Generated",
+      "type": "string",
+      "default": "",
+      "validation": "",
+      "group_name": "aws_subnet_networks",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "group_name_vpc_id",
+      "label": "Group Name Vpc Id",
+      "description": "Generated",
+      "type": "string",
+      "default": "",
+      "validation": "",
+      "group_name": "security",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
     }
   ],
-  "template_output_params": [ ]
+  "template_output_params": [  {
+    "name": "tls_private_key.ssh / id",
+    "label": "tls_private_key.ssh / id",
+    "description": "",
+    "group_name": "",
+    "secured": false,
+    "hidden": false,
+    "shortname": ""
+  } ]
 }

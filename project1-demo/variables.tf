@@ -39,3 +39,13 @@ variable "aws_instance_name" {
   description = "Generated"
 }
 
+variable "aws_network_vpc_id" {
+  type = "string"
+  description = "Generated"
+}
+
+variable "group_name_vpc_id" {
+  type = "string"
+  description = "Generated"
+}
+

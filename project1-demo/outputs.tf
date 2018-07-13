@@ -4,3 +4,7 @@
 ##
 #####################################################################
 
+output "tls_private_key.ssh / id" {
+  value = "${tls_private_key.ssh.id}"
+}
+
